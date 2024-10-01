@@ -9,19 +9,14 @@
 <body>
     <div class="container">
         <div class="login-box">
-            <h2 style="color: white;">Login</h2><br>
+            <h2 style="color: rgb(243, 238, 238);">Login</h2><br>
             <form>
                 <input type="text" class="form-control" id="username" placeholder="Username">
                 <input type="password" class="form-control" id="password" placeholder="Password">
-                <br><br>
                 <div class="buttons">
-        <a href="menu.html" class="button">
-            <div class="icon">
-            </div>Login</a>
-        <a href="menu.html" class="button">
-            <div class="icon">
-            </div>Lewati</a>
-    </div>
+                <a href="./menu.html"><button class="btn">Login</button></a>
+                <a href="menu.html"><button class="btn">Lewati</button></a>
+                </div>
             </form>
         </div>
     </div>
@@ -33,6 +28,11 @@
 </body>
 </html>
 <style>
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 22px;
+    }
     body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -41,6 +41,7 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .container {
     width: 100%;
     height: 100vh;
@@ -50,53 +51,49 @@
 }
 
 .login-box {
-    width: 60%;
-    height: 30%;
+    width: 50%;
+    height: 50%;
     background-image: url('https://pomf2.lain.la/f/fbokpeaf.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #b3aeae;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
 .form-control {
-    width: 94%;
-    height: 25px;
+    width: 95%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 5px solid #949191;
+    border: 1px solid wheat;
 }
-        .button {
-            display: flex;
-            align-items: center;
-            background-color: #007bff; /* Warna latar belakang tombol */
-            color: white; /* Warna teks tombol */
-            padding: 10px 15px;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-            text-align: center;
-            curcor: pointer;
-        }
 
-        .button:hover {
-            background-color: #0056b3; /* Warna saat hover */
-        }
+.btn {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    transition: backgroun-color0.3s;
+}
+.btn:hover {
+    background-color: #3e8e41;
+}
 
+.bg-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
 
-
-        .icon img {
-            width: 20px; /* Ukuran gambar ikon */
-            height: 20px; /* Ukuran gambar ikon */
-        }
-        .buttons {
-            display: flex;
-            justify-content: space-between; /* Mengatur tombol di kiri dan kanan */
-            margin-top: 20px;
-        }
 .bg {
     position: absolute;
     top: 0;
