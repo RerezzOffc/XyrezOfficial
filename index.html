@@ -2,106 +2,186 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Website Rerezz Official</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
+<!-- [ NAVIGATION ]-->
 <body>
     <div class="container">
-        <div class="login-box">
-            <h2 style="color: rgb(243, 238, 238);">Login</h2><br>
-            <form>
-                <input type="text" class="form-control" id="username" placeholder="Username">
-                <input type="password" class="form-control" id="password" placeholder="Password">
-            </form>
-            <div class="buttons">
-                <a href="./menu.html"><button class="btn">Login</button></a>
-                <a href="menu.html"><button class="btn">Lewati</button></a>
-                </div>
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                    <span class="icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="title">MENU</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">Seller</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="chatbuble-outline"></ion-icon>
+                        </span>
+                        <span class="title">Message</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="help-outline"></ion-icon>
+                        </span>
+                        <span class="title">Help</span>
+                    </a>
+                </li>
+            </ul>
         </div>
-        
-    </div>
-    <div class="bg-container">
-        <div class="bg" style="background-image: url('background.jpg');"></div>
-    </div>
+                            <!-- [ MAIN ] -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
 
-    <script src="script.js"></script>
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search Here">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+
+                <div class="user">
+                    <img src="#">
+                </div>
+            </div>
+                            <!-- [ CARD ] -->
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">HOME</div>
+                        <div class="cardName">Menu Utama</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">STORE</div>
+                        <div class="cardName">Toko Digital</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="cart-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">TESTI</div>
+                        <div class="cardName">Testonomi</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="book-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">CONTACT</div>
+                        <div class="cardName">Hubungi Kami</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="people-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- [ LIST PRODUK ] -->
+         <div class="details">
+            <div class="recentOrders">
+                <div class="cardHeader">
+                    <h2>PRODUK TERBARU</h2>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Nama Produk</td>
+                            <td>Harga</td>
+                            <td>Pyament</td>
+                            <td>Details</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>VPS Digital Ocean</td>
+                            <td>10-70 K</td>
+                            <td>ALL PAY</td>
+                            <td><a href="#"><button>DETILE</button></a></td>
+                        </tr>
+                        <tr>
+                            <td>Digital Ocean Akun</td>
+                            <td>160 - 200 K</td>
+                            <td>ALL PAY</td>
+                            <td><A href="#"><button>DETILE</button></A></td>
+                        </tr>
+                        <tr>
+                            <td>Own PT Panel</td>
+                            <td>20-25 K</td>
+                            <td>ALL PAY</td>
+                            <td><a href="#"><button>DETILE</button></a></td>
+                        </tr>
+                        <tr>
+                            <td>PT Panel</td>
+                            <td>15-20 K</td>
+                            <td> ALL PAY</td>
+                            <td><a href="#"><button>DETILE</button></a></td>
+                        </tr>
+                        <tr>
+                            <td>Admin Panel</td>
+                            <td>10-15 K</td>
+                            <td>ALL PAY</td>
+                            <td><a href="#"><button>DETILE</button></a></td>
+                        </tr>
+                        <tr>
+                            <tr>Panel Petrodactyl</tr>
+                            <td>1-15 K</td>
+                            <td>ALL PAY</td>
+                            <td><a href="#"><button>DETILE</button></a></td>
+                        </tr>
+                        <tr>
+                            <td>Jadi Bot</td>
+                            <td>5-20K</td>
+                            <td>ALL PAY</td>
+                            <td><a href="#"><button>DETILE</button></a></td>
+                        </tr>
+                        <tr>
+                            <td>Sewa Bot</td>
+                            <td>5-30 K</td>
+                            <td>ALL PAY</td>
+                            <td><a href="#"><button>DETILE</button></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+         </div>
+    </div>
+    <!-- [ SCRIPT ] -->
+     <script src="js/index.js"></script>
+    <!-- [ ION ICON ] -->
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
-</html>
-<style>
-    .buttons {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 22px;
-    }
-    body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-image: url('https://pomf2.lain.la/f/fbokpeaf.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.container {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.login-box {
-    width: 50%;
-    height: 50%;
-    background-image: url('https://pomf2.lain.la/f/fbokpeaf.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 20px;
-    border: 1px solid #b3aeae;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-
-.form-control {
-    width: 95%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid wheat;
-}
-
-.btn {
-    background-color: #4caf50;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    align-items: center;
-    display: flex;
-    transition: backgroun-color0.3s;
-}
-.btn:hover {
-    background-color: #3e8e41;
-}
-
-.bg-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: -1;
-}
-
-.bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-}
-</style>
